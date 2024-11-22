@@ -51,27 +51,82 @@
 
 
 //write a program factorial using recursion
+//
+//#include <iostream>
+//using namespace std;
+//
+//int factorial(int n) {
+//    if (n <= 1) {
+//        return 1;
+//    } else {
+//        return n * factorial(n - 1);
+//    }
+//}
+//
+//int main() 
+//    int n;
+//    cout << "Enter number: ";
+//    cin >> n;
+//    cout << "Factorial of " << n << " = " << factorial(n) << endl;
+//
+//}
 
-#include <iostream>
+
+
+//#include<iostream>
+//using namespace std;
+//int fact(int a)
+//{
+//	if(a==1){
+//		return 1;
+//	}
+//	return fact(a-1)*a;
+//}
+//int main(){
+//	int n;
+//	cout<<"Enter number";
+//	cin>>n;
+//	cout<<"Fact="<<fact(n);
+//}
+
+
+// febonacci seriess
+
+//find the and tarm using recursion
+//#include<iostream>
+//using namespace std;
+//int fact(int a)
+//{
+//	if(a<=1){
+//		return 1;
+//	}
+//	return fact(a-1)+fact(a-2);
+//}
+//int main(){
+//	int n;
+//	cout<<"Enter number";
+//	cin>>n;
+//	cout<<"Fact="<<fact(n);
+//}
+
+
+#include<iostream>
 using namespace std;
-
-int factorial(int n) {
-    if (n <= 1) {
-        return 1;
-    } else {
-        return n * factorial(n - 1);
-    }
+int pow(int b,int p){
+	if(b==0){
+		return 0;
+	}
+	if(p==0){
+		return 1;
+	}
+	int ans=b*pow(b,p-1);
+	return ans;
 }
-
-int main() {
-    int n;
-    cout << "Enter number: ";
-    cin >> n;
-    cout << "Factorial of " << n << " = " << factorial(n) << endl;
-
+int main(){
+	int b,p;
+	cout<<"enter base value\n";
+	cin>>b;
+	cout<<"ans\n";
+	cin>>p;
+	pow(b,p);
 }
-
-
-power ka program  pow(b,p) 2,3=8
-febonci 1 2 3 5 8   (5)
-
